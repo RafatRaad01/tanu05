@@ -1,0 +1,1447 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>শুধু তোমার জন্য ❤️</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Noto Serif Bengali',serif;
+    background:#fff8f5;
+    color:#4a2525;
+    overflow-x:hidden;
+}
+
+h1,h2,h3{
+    font-family:'Playfair Display','Noto Serif Bengali',serif;
+}
+
+/* =========================
+   TOP MESSAGE
+========================= */
+
+.top-message{
+    background:#6d1725;
+    color:#fff;
+    text-align:center;
+    padding:10px 15px;
+    font-size:14px;
+    letter-spacing:.4px;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    backdrop-filter:blur(18px);
+    background:rgba(255,248,245,.82);
+    border-bottom:1px solid rgba(120,40,50,.12);
+}
+
+.nav-inner{
+    max-width:1200px;
+    margin:auto;
+    padding:15px 25px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    font-family:'Playfair Display',serif;
+    font-size:22px;
+    font-weight:600;
+    color:#731d2b;
+}
+
+.nav-links{
+    display:flex;
+    gap:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#5d3030;
+    font-size:14px;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#a82d45;
+}
+
+.nav-button{
+    background:#7d1d2d;
+    color:white;
+    padding:10px 18px;
+    border-radius:30px;
+    border:none;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.nav-button:hover{
+    transform:translateY(-2px);
+    box-shadow:0 10px 25px rgba(125,29,45,.25);
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    min-height:90vh;
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+    background-image:
+        linear-gradient(rgba(44,8,15,.60),rgba(44,8,15,.65)),
+        url("images/hero.jpg");
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    max-width:1100px;
+    width:90%;
+    display:grid;
+    grid-template-columns:1.2fr .8fr;
+    gap:60px;
+    align-items:center;
+    color:white;
+}
+
+.hero-text small{
+    letter-spacing:3px;
+    text-transform:uppercase;
+    opacity:.85;
+}
+
+.hero-text h1{
+    font-size:clamp(42px,6vw,78px);
+    line-height:1.1;
+    margin:20px 0;
+}
+
+.hero-text p{
+    font-size:18px;
+    line-height:1.9;
+    max-width:650px;
+    opacity:.92;
+}
+
+.hero-btn{
+    display:inline-block;
+    margin-top:30px;
+    background:#fff;
+    color:#701b2a;
+    padding:14px 25px;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.hero-btn:hover{
+    transform:translateY(-3px);
+}
+
+.hero-card{
+    padding:12px;
+    border-radius:25px;
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,.25);
+    box-shadow:0 30px 70px rgba(0,0,0,.35);
+}
+
+.hero-card img{
+    width:100%;
+    height:480px;
+    object-fit:cover;
+    border-radius:18px;
+}
+
+/* =========================
+   SECTION
+========================= */
+
+section{
+    padding:100px 20px;
+}
+
+.section-container{
+    max-width:1150px;
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title span{
+    color:#a32a40;
+    font-size:14px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+}
+
+.section-title h2{
+    font-size:45px;
+    margin-top:12px;
+}
+
+.section-title p{
+    margin:15px auto 0;
+    max-width:650px;
+    line-height:1.8;
+    color:#765b5b;
+}
+
+/* =========================
+   INTRO
+========================= */
+
+.intro{
+    background:#fff8f5;
+    text-align:center;
+}
+
+.intro-box{
+    max-width:850px;
+    margin:auto;
+}
+
+.intro-box h2{
+    font-size:48px;
+    color:#6d1725;
+    margin-bottom:25px;
+}
+
+.intro-box p{
+    font-size:18px;
+    line-height:2;
+    color:#765b5b;
+}
+
+/* =========================
+   MEMORIES
+========================= */
+
+.memories{
+    background:#f9eee9;
+}
+
+.memory-card{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    min-height:500px;
+    margin-bottom:70px;
+    background:white;
+    border-radius:30px;
+    overflow:hidden;
+    box-shadow:0 20px 60px rgba(90,30,30,.10);
+}
+
+.memory-card:nth-child(even){
+    direction:rtl;
+}
+
+.memory-card:nth-child(even) .memory-content{
+    direction:ltr;
+}
+
+.memory-image{
+    min-height:500px;
+    overflow:hidden;
+}
+
+.memory-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:transform .7s ease;
+}
+
+.memory-card:hover .memory-image img{
+    transform:scale(1.06);
+}
+
+.memory-content{
+    padding:60px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.memory-number{
+    color:#a82d45;
+    font-family:'Playfair Display',serif;
+    font-size:15px;
+    letter-spacing:3px;
+    margin-bottom:15px;
+}
+
+.memory-content h3{
+    font-size:38px;
+    color:#681827;
+    margin-bottom:20px;
+}
+
+.memory-content p{
+    line-height:2;
+    color:#765b5b;
+    font-size:16px;
+}
+
+/* =========================
+   LOVE LETTER
+========================= */
+
+.letter-section{
+    background:#fff8f5;
+}
+
+.envelope-area{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:400px;
+}
+
+.envelope{
+    width:330px;
+    height:220px;
+    background:#8c2637;
+    border-radius:12px;
+    position:relative;
+    cursor:pointer;
+    box-shadow:0 25px 60px rgba(100,25,40,.25);
+    transition:.4s;
+}
+
+.envelope:hover{
+    transform:translateY(-8px) rotate(-1deg);
+}
+
+.envelope:before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    border-left:165px solid transparent;
+    border-right:165px solid transparent;
+    border-top:120px solid #a73449;
+}
+
+.envelope-text{
+    position:absolute;
+    bottom:30px;
+    width:100%;
+    text-align:center;
+    color:white;
+    font-family:'Playfair Display',serif;
+    font-size:20px;
+    z-index:2;
+}
+
+.letter-modal{
+    display:none;
+    position:fixed;
+    inset:0;
+    z-index:2000;
+    background:rgba(30,5,10,.78);
+    backdrop-filter:blur(10px);
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+}
+
+.letter-paper{
+    background:#fffaf2;
+    max-width:700px;
+    width:100%;
+    max-height:85vh;
+    overflow-y:auto;
+    padding:60px;
+    border-radius:8px;
+    box-shadow:0 30px 100px rgba(0,0,0,.4);
+    position:relative;
+}
+
+.letter-paper h2{
+    font-size:38px;
+    color:#731d2b;
+    margin-bottom:25px;
+}
+
+.letter-paper p{
+    line-height:2;
+    font-size:17px;
+    color:#5f4141;
+    margin-bottom:18px;
+}
+
+.close-letter{
+    position:absolute;
+    top:15px;
+    right:20px;
+    border:none;
+    background:none;
+    font-size:28px;
+    cursor:pointer;
+    color:#731d2b;
+}
+
+/* =========================
+   SAD SECTION
+========================= */
+
+.sad-section{
+    background:#f6e9e5;
+}
+
+.sad-buttons{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.sad-buttons button{
+    border:none;
+    padding:15px 25px;
+    border-radius:30px;
+    background:#7d1d2d;
+    color:white;
+    cursor:pointer;
+    font-family:inherit;
+    transition:.3s;
+}
+
+.sad-buttons button:hover{
+    transform:translateY(-3px);
+}
+
+.sad-message{
+    margin:40px auto 0;
+    max-width:700px;
+    min-height:100px;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 15px 40px rgba(80,20,20,.08);
+    font-size:18px;
+    line-height:1.9;
+}
+
+/* =========================
+   DREAMS
+========================= */
+
+.dreams{
+    background:#fff8f5;
+}
+
+.dream-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.dream{
+    min-height:250px;
+    border-radius:25px;
+    padding:30px 25px;
+    background:linear-gradient(145deg,#fff,#f6e4df);
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    transition:.4s;
+    border:1px solid rgba(100,30,30,.08);
+}
+
+.dream:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 45px rgba(80,20,20,.12);
+}
+
+.dream-icon{
+    font-size:40px;
+    margin-bottom:auto;
+}
+
+.dream h3{
+    color:#701b2a;
+    font-size:24px;
+    margin-bottom:10px;
+}
+
+.dream p{
+    color:#765b5b;
+    line-height:1.7;
+}
+
+/* =========================
+   FINAL
+========================= */
+
+.final-surprise{
+    min-height:85vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+    position:relative;
+    background-image:
+        linear-gradient(rgba(30,5,12,.55),rgba(30,5,12,.70)),
+        url("images/final.jpg");
+    background-size:cover;
+    background-position:center;
+}
+
+.final-content{
+    max-width:850px;
+    padding:30px;
+}
+
+.final-content span{
+    letter-spacing:5px;
+    font-size:13px;
+}
+
+.final-content h2{
+    font-size:clamp(45px,7vw,80px);
+    line-height:1.15;
+    margin:25px 0;
+}
+
+.final-content p{
+    font-size:20px;
+    line-height:2;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#54121e;
+    color:#fff;
+    text-align:center;
+    padding:40px 20px;
+}
+
+footer p{
+    opacity:.85;
+    line-height:1.8;
+}
+
+/* =========================
+   FLOATING HEARTS
+========================= */
+
+.heart{
+    position:fixed;
+    bottom:-30px;
+    font-size:18px;
+    pointer-events:none;
+    animation:floatHeart 7s linear forwards;
+    z-index:3000;
+    opacity:.7;
+}
+
+@keyframes floatHeart{
+
+    0%{
+        transform:translateY(0) scale(.8);
+        opacity:0;
+    }
+
+    15%{
+        opacity:.8;
+    }
+
+    100%{
+        transform:translateY(-110vh) translateX(60px) scale(1.4);
+        opacity:0;
+    }
+
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:850px){
+
+    .nav-links{
+        display:none;
+    }
+
+    .hero-content{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .hero-card{
+        max-width:350px;
+        margin:auto;
+    }
+
+    .hero-card img{
+        height:400px;
+    }
+
+    .memory-card{
+        grid-template-columns:1fr;
+    }
+
+    .memory-card:nth-child(even){
+        direction:ltr;
+    }
+
+    .memory-image{
+        min-height:350px;
+    }
+
+    .memory-content{
+        padding:40px 30px;
+    }
+
+    .memory-content h3{
+        font-size:30px;
+    }
+
+    .dream-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+}
+
+@media(max-width:550px){
+
+    section{
+        padding:75px 15px;
+    }
+
+    .section-title h2{
+        font-size:36px;
+    }
+
+    .intro-box h2{
+        font-size:36px;
+    }
+
+    .hero-text h1{
+        font-size:45px;
+    }
+
+    .dream-grid{
+        grid-template-columns:1fr;
+    }
+
+    .letter-paper{
+        padding:40px 25px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+<!-- =========================
+     TOP MESSAGE
+========================= -->
+
+<div class="top-message">
+    কিছু ভালোবাসা গল্প হয়ে যায়… আর কিছু ভালোবাসা হয়ে থাকে সারাজীবন। ❤️
+</div>
+
+
+<!-- =========================
+     NAVBAR
+========================= -->
+
+<nav class="navbar">
+
+    <div class="nav-inner">
+
+        <div class="logo">
+            শুধু তোমার জন্য ❤️
+        </div>
+
+        <div class="nav-links">
+            <a href="#memories">স্মৃতিগুলো</a>
+            <a href="#letter">চিঠি</a>
+            <a href="#sad">মন খারাপ হলে</a>
+            <a href="#dreams">স্বপ্ন</a>
+        </div>
+
+        <button class="nav-button" onclick="openLetter()">
+            চিঠি খুলুন ❤️
+        </button>
+
+    </div>
+
+</nav>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="hero-text">
+
+            <small>
+                A little digital love story
+            </small>
+
+            <h1>
+                আমার জীবনের<br>
+                সবচেয়ে সুন্দর অধ্যায়…<br>
+                তুমি। ❤️
+            </h1>
+
+            <p>
+                পৃথিবীতে অনেক মানুষ আসে, অনেক গল্প তৈরি হয়।
+                কিন্তু কিছু মানুষ এসে পুরো জীবনটাকেই
+                একটা সুন্দর গল্প বানিয়ে দেয়।
+                আমার জন্য সেই মানুষটা তুমি।
+            </p>
+
+            <a href="#memories" class="hero-btn">
+                আমাদের গল্পটা দেখি ✨
+            </a>
+
+        </div>
+
+
+        <div class="hero-card">
+
+            <img
+                src="images/extra.jpg"
+                alt="Our Memory"
+            >
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     INTRO
+========================= -->
+
+<section class="intro">
+
+    <div class="intro-box">
+
+        <h2>
+            কিছু গল্প বলা হয় না…
+        </h2>
+
+        <p>
+            কিছু গল্প শুধু অনুভব করা যায়।
+            আমাদের গল্পটাও তেমনই।
+            প্রথম দেখা থেকে শুরু করে ছোট ছোট অভিমান,
+            হাসি, অপেক্ষা, ভালোবাসা—
+            সবকিছু মিলিয়েই তো আমরা।
+            তাই এই website শুধু একটা website না…
+            এটা আমাদের কিছু মুহূর্তকে ধরে রাখার
+            ছোট্ট একটা জায়গা। ❤️
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     MEMORIES
+========================= -->
+
+<section class="memories" id="memories">
+
+    <div class="section-container">
+
+        <div class="section-title">
+
+            <span>Our Memories</span>
+
+            <h2>
+                আমাদের কিছু সুন্দর মুহূর্ত
+            </h2>
+
+            <p>
+                কিছু ছবি শুধু ছবি নয়—
+                এগুলোর প্রত্যেকটার পিছনে একটা করে গল্প আছে।
+            </p>
+
+        </div>
+
+
+        <!-- MEMORY 01 -->
+
+        <div class="memory-card">
+
+            <div class="memory-image">
+
+                <img
+                    src="images/memory1.jpg"
+                    alt="Memory 1"
+                >
+
+            </div>
+
+            <div class="memory-content">
+
+                <div class="memory-number">
+                    MEMORY 01
+                </div>
+
+                <h3>
+                    যেদিনটা মনে থাকে
+                </h3>
+
+                <p>
+                    এই ছবিটার দিকে তাকালেই মনে হয়,
+                    সময়টা যদি আবার ফিরে আসতো!
+                    হয়তো সেই একই জায়গায় আবার দাঁড়িয়ে
+                    তোমার দিকে তাকিয়ে থাকতাম।
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- MEMORY 02 -->
+
+        <div class="memory-card">
+
+            <div class="memory-image">
+
+                <img
+                    src="images/memory2.png"
+                    alt="Memory 2"
+                >
+
+            </div>
+
+            <div class="memory-content">
+
+                <div class="memory-number">
+                    MEMORY 02
+                </div>
+
+                <h3>
+                    তোমার সাথে সময়
+                </h3>
+
+                <p>
+                    তোমার সাথে কাটানো সময় কখনো
+                    সাধারণ মনে হয় না।
+                    ছোট একটা মুহূর্তও আমার কাছে
+                    অনেক বড় একটা স্মৃতি হয়ে যায়।
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- MEMORY 03 -->
+
+        <div class="memory-card">
+
+            <div class="memory-image">
+
+                <img
+                    src="images/memory3.jpg"
+                    alt="Memory 3"
+                >
+
+            </div>
+
+            <div class="memory-content">
+
+                <div class="memory-number">
+                    MEMORY 03
+                </div>
+
+                <h3>
+                    হাসিটা আমার প্রিয়
+                </h3>
+
+                <p>
+                    তোমার হাসিটা দেখলে আমার নিজের
+                    অজান্তেই মন ভালো হয়ে যায়।
+                    পৃথিবীর সবকিছু এক পাশে,
+                    আর তোমার ওই হাসিটা এক পাশে। ❤️
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- MEMORY 04 -->
+
+        <div class="memory-card">
+
+            <div class="memory-image">
+
+                <img
+                    src="images/memory4.jpg"
+                    alt="Memory 4"
+                >
+
+            </div>
+
+            <div class="memory-content">
+
+                <div class="memory-number">
+                    MEMORY 04
+                </div>
+
+                <h3>
+                    আমাদের ছোট্ট পৃথিবী
+                </h3>
+
+                <p>
+                    পৃথিবী যত বড়ই হোক,
+                    তোমার পাশে থাকলে আমার কাছে
+                    মনে হয় আমার পৃথিবীটা খুব ছোট—
+                    শুধু তুমি আর আমি।
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- MEMORY 05 -->
+
+        <div class="memory-card">
+
+            <div class="memory-image">
+
+                <img
+                    src="images/memory5.jpg"
+                    alt="Memory 5"
+                >
+
+            </div>
+
+            <div class="memory-content">
+
+                <div class="memory-number">
+                    MEMORY 05
+                </div>
+
+                <h3>
+                    আরেকটা সুন্দর দিন
+                </h3>
+
+                <p>
+                    এমন আরও হাজার হাজার দিন চাই।
+                    একই মানুষ,
+                    একই ভালোবাসা,
+                    শুধু গল্পটা আরও অনেক বড় হোক।
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     LOVE LETTER
+========================= -->
+
+<section class="letter-section" id="letter">
+
+    <div class="section-container">
+
+        <div class="section-title">
+
+            <span>A Letter For You</span>
+
+            <h2>
+                তোমার জন্য একটা চিঠি
+            </h2>
+
+            <p>
+                এখানে ক্লিক করো…
+                হয়তো এমন কিছু লেখা আছে
+                যেটা মুখে বলতে পারি না। ❤️
+            </p>
+
+        </div>
+
+
+        <div class="envelope-area">
+
+            <div class="envelope" onclick="openLetter()">
+
+                <div class="envelope-text">
+                    Click to open ❤️
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     LETTER MODAL
+========================= -->
+
+<div class="letter-modal" id="letterModal">
+
+    <div class="letter-paper">
+
+        <button class="close-letter" onclick="closeLetter()">
+            ×
+        </button>
+
+        <h2>
+            প্রিয়তমা, ❤️
+        </h2>
+
+        <p>
+            জানো, অনেক কথা আছে যেগুলো তোমাকে
+            প্রতিদিন বলতে চাই, কিন্তু সবসময় বলা হয়ে ওঠে না।
+        </p>
+
+        <p>
+            তুমি আমার জীবনে আসার পর থেকে
+            অনেক সাধারণ মুহূর্তও অসাধারণ হয়ে গেছে।
+            তোমার সাথে কথা বলা,
+            তোমার হাসি দেখা,
+            তোমার অভিমান,
+            এমনকি তোমার সাথে ছোট্ট একটা ঝগড়াও—
+            সবকিছু আমার কাছে আলাদা।
+        </p>
+
+        <p>
+            আমি জানি না ভবিষ্যতে আমাদের জীবন
+            ঠিক কেমন হবে।
+            কিন্তু একটা জিনিস জানি—
+            আমি চাই সেই ভবিষ্যতের প্রতিটা ছবিতে
+            তুমি থাকো।
+        </p>
+
+        <p>
+            সুখের দিনে,
+            মন খারাপের দিনে,
+            কঠিন সময়ে,
+            হাসির সময়ে—
+            আমি তোমার পাশে থাকতে চাই।
+        </p>
+
+        <p>
+            আর যদি কখনো মনে হয়
+            তুমি একা,
+            তখন শুধু মনে রেখো—
+            পৃথিবীর কোথাও একজন মানুষ আছে
+            যে তোমাকে নিজের সমস্ত হৃদয় দিয়ে ভালোবাসে।
+        </p>
+
+        <p>
+            সেই মানুষটা আমি। ❤️
+        </p>
+
+        <p>
+            ভালোবাসি তোমাকে।
+            আজ,
+            আগামীকাল,
+            আর যতদিন আল্লাহ আমাদের একসাথে রাখেন।
+        </p>
+
+        <p style="margin-top:35px;">
+            — তোমার মানুষ ❤️
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     SAD SECTION
+========================= -->
+
+<section class="sad-section" id="sad">
+
+    <div class="section-container">
+
+        <div class="section-title">
+
+            <span>Whenever You Feel Sad</span>
+
+            <h2>
+                মন খারাপ হলে এখানে এসো ❤️
+            </h2>
+
+            <p>
+                আমি কাছে না থাকলেও
+                এই ছোট্ট জায়গাটা যেন তোমাকে
+                আমার কাছাকাছি অনুভব করায়।
+            </p>
+
+        </div>
+
+
+        <div class="sad-buttons">
+
+            <button onclick="showSadMessage(1)">
+                খুব মন খারাপ 😔
+            </button>
+
+            <button onclick="showSadMessage(2)">
+                আমাকে মিস করছো? 🥺
+            </button>
+
+            <button onclick="showSadMessage(3)">
+                একটু হাসো তো ❤️
+            </button>
+
+        </div>
+
+
+        <div class="sad-message" id="sadMessage">
+
+            একটা button চাপো…
+            আমি তোমার সাথে একটু কথা বলবো। ❤️
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     DREAMS
+========================= -->
+
+<section class="dreams" id="dreams">
+
+    <div class="section-container">
+
+        <div class="section-title">
+
+            <span>Our Future</span>
+
+            <h2>
+                আমাদের কিছু স্বপ্ন
+            </h2>
+
+            <p>
+                আজ শুধু স্বপ্ন…
+                একদিন এগুলোই আমাদের স্মৃতি হবে।
+            </p>
+
+        </div>
+
+
+        <div class="dream-grid">
+
+
+            <div class="dream">
+
+                <div class="dream-icon">
+                    🌧️
+                </div>
+
+                <h3>
+                    বৃষ্টির বিকেল
+                </h3>
+
+                <p>
+                    একসাথে বসে বৃষ্টি দেখবো,
+                    চা খাবো আর অনেক গল্প করবো।
+                </p>
+
+            </div>
+
+
+            <div class="dream">
+
+                <div class="dream-icon">
+                    🌊
+                </div>
+
+                <h3>
+                    সমুদ্রের কাছে
+                </h3>
+
+                <p>
+                    সমুদ্রের পাশে হাঁটবো,
+                    আর ছবি তুলবো
+                    শুধু আমাদের জন্য।
+                </p>
+
+            </div>
+
+
+            <div class="dream">
+
+                <div class="dream-icon">
+                    🌅
+                </div>
+
+                <h3>
+                    একসাথে সূর্যোদয়
+                </h3>
+
+                <p>
+                    খুব ভোরে ঘুম থেকে উঠে
+                    একসাথে সূর্যোদয় দেখবো।
+                </p>
+
+            </div>
+
+
+            <div class="dream">
+
+                <div class="dream-icon">
+                    🏡
+                </div>
+
+                <h3>
+                    আমাদের ছোট্ট সংসার
+                </h3>
+
+                <p>
+                    খুব বড় কিছু না।
+                    শুধু শান্ত একটা জীবন,
+                    আর পাশে তুমি।
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FINAL SURPRISE
+========================= -->
+
+<section class="final-surprise">
+
+    <div class="final-content">
+
+        <span>
+            ONE LAST THING
+        </span>
+
+        <h2>
+            যদি আবার জীবন শুরু করতে পারতাম…
+        </h2>
+
+        <p>
+            আমি আবারও তোমাকেই খুঁজতাম। ❤️
+            <br><br>
+            কারণ আমার সবচেয়ে সুন্দর সিদ্ধান্ত,
+            আমার সবচেয়ে সুন্দর গল্প,
+            আর আমার সবচেয়ে প্রিয় মানুষ—
+            তুমি।
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <p>
+        Made with love, only for you. ❤️
+    </p>
+
+    <p>
+        আমাদের গল্পের শেষ নেই…
+        কারণ আমাদের গল্প এখনও লেখা হচ্ছে। ✨
+    </p>
+
+</footer>
+
+
+<script>
+
+/* =========================
+   LETTER
+========================= */
+
+function openLetter(){
+
+    document.getElementById("letterModal").style.display="flex";
+
+    document.body.style.overflow="hidden";
+
+}
+
+function closeLetter(){
+
+    document.getElementById("letterModal").style.display="none";
+
+    document.body.style.overflow="auto";
+
+}
+
+
+/* =========================
+   SAD MESSAGES
+========================= */
+
+function showSadMessage(number){
+
+    let message="";
+
+    if(number===1){
+
+        message=
+        "মন খারাপ করো না। ❤️<br><br>"+
+        "আমি হয়তো এই মুহূর্তে তোমার পাশে নেই,"+
+        " কিন্তু আমার মনটা তোমার কাছেই আছে।"+
+        " একটু গভীরভাবে শ্বাস নাও, পানি খাও,"+
+        " আর মনে রেখো—এই সময়টাও কেটে যাবে।";
+
+    }
+
+    else if(number===2){
+
+        message=
+        "আমাকে মিস করছো? 🥺❤️<br><br>"+
+        "তাহলে চোখ বন্ধ করো।"+
+        " ভাবো আমি তোমার সামনে বসে আছি।"+
+        " আর বলছি—"+
+        " 'এই যে, এত মিস করছো কেন?' ❤️";
+
+    }
+
+    else{
+
+        message=
+        "একটু হাসো না প্লিজ! ❤️<br><br>"+
+        "তোমার হাসিটা আমার সবচেয়ে প্রিয় জিনিসগুলোর একটা।"+
+        " তাই এখনই একটু হাসি দাও।"+
+        " হ্যাঁ, এই হাসিটাই! 😌❤️";
+
+    }
+
+    document.getElementById("sadMessage").innerHTML=message;
+
+}
+
+
+/* =========================
+   FLOATING HEARTS
+========================= */
+
+function createHeart(){
+
+    const heart=document.createElement("div");
+
+    heart.className="heart";
+
+    heart.innerHTML=
+        ["❤️","💕","💗","💖","💞"]
+        [Math.floor(Math.random()*5)];
+
+    heart.style.left=
+        Math.random()*100+"vw";
+
+    heart.style.animationDuration=
+        (5+Math.random()*4)+"s";
+
+    heart.style.fontSize=
+        (14+Math.random()*16)+"px";
+
+    document.body.appendChild(heart);
+
+    setTimeout(function(){
+
+        heart.remove();
+
+    },9000);
+
+}
+
+setInterval(createHeart,1800);
+
+
+/* =========================
+   CLOSE MODAL ON BACKGROUND
+========================= */
+
+document.getElementById("letterModal")
+.addEventListener("click",function(event){
+
+    if(event.target===this){
+
+        closeLetter();
+
+    }
+
+});
+
+
+</script>
+
+</body>
+</html>
